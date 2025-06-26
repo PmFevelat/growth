@@ -22,8 +22,7 @@ import {
   Underline,
   Link,
   Image,
-  Type,
-  Palette,
+
   Send,
   Save,
   MoreHorizontal,
@@ -71,7 +70,7 @@ Cordialement,
 export function EmailEditor({ className }: EmailEditorProps) {
   const [template, setTemplate] = useState<EmailTemplate>(emailTemplates[0]);
   const [isPreview, setIsPreview] = useState(false);
-  const [emailStatus, setEmailStatus] = useState<"draft" | "ready" | "sending" | "sent">("draft");
+  const [emailStatus] = useState<"draft" | "ready" | "sending" | "sent">("draft");
 
   const handlePersonalizationInsert = (variable: string) => {
     const textarea = document.querySelector('textarea') as HTMLTextAreaElement;

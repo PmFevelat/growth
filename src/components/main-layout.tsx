@@ -250,7 +250,7 @@ export function MainLayout() {
                                        </div>
                                        <span className="font-medium">Great for personalized outreach</span>
                                      </div>
-                                     <p>"Easy to use and very effective for cold email campaigns"</p>
+                                     <p>&quot;Easy to use and very effective for cold email campaigns&quot;</p>
                                    </div>
                                    <div className="text-xs text-gray-600">
                                      <div className="flex items-center gap-1 mb-0.5">
@@ -262,7 +262,7 @@ export function MainLayout() {
                                        </div>
                                        <span className="font-medium">Good automation features</span>
                                      </div>
-                                     <p>"Solid platform with good deliverability rates"</p>
+                                     <p>&quot;Solid platform with good deliverability rates&quot;</p>
                                    </div>
                                  </div>
                                </div>
