@@ -40,8 +40,8 @@ export function MainLayout() {
           <Sidebar />
         </Panel>
 
-        <PanelResizeHandle className="w-1 bg-gray-200 hover:bg-indigo-500 transition-all cursor-col-resize flex items-center justify-center group">
-          <div className="w-1 h-3 bg-gray-100 group-hover:bg-white transition-colors opacity-20 group-hover:opacity-100"></div>
+        <PanelResizeHandle className="w-0.5 bg-gray-200 hover:bg-indigo-500 transition-all cursor-col-resize flex items-center justify-center group">
+          <div className="w-0.5 h-3 bg-gray-100 group-hover:bg-white transition-colors opacity-20 group-hover:opacity-100"></div>
         </PanelResizeHandle>
 
         {/* Central Area with vertical split */}
@@ -52,8 +52,8 @@ export function MainLayout() {
               <CentralArea shouldAddTabs={shouldAddTabs} shouldShowEmails={shouldShowEmails} />
             </Panel>
 
-            <PanelResizeHandle className="h-1 bg-gray-200 hover:bg-indigo-500 transition-all cursor-row-resize flex items-center justify-center group">
-              <div className="h-1 w-3 bg-gray-100 group-hover:bg-white transition-colors opacity-20 group-hover:opacity-100"></div>
+            <PanelResizeHandle className="h-0.5 bg-gray-200 hover:bg-indigo-500 transition-all cursor-row-resize flex items-center justify-center group">
+              <div className="h-0.5 w-3 bg-gray-100 group-hover:bg-white transition-colors opacity-20 group-hover:opacity-100"></div>
             </PanelResizeHandle>
 
             {/* Bottom panel - Enrichment data */}
@@ -308,8 +308,8 @@ export function MainLayout() {
           </PanelGroup>
         </Panel>
 
-        <PanelResizeHandle className="w-1 bg-gray-200 hover:bg-indigo-500 transition-all cursor-col-resize flex items-center justify-center group">
-          <div className="w-1 h-3 bg-gray-100 group-hover:bg-white transition-colors opacity-20 group-hover:opacity-100"></div>
+        <PanelResizeHandle className="w-0.5 bg-gray-200 hover:bg-indigo-500 transition-all cursor-col-resize flex items-center justify-center group">
+          <div className="w-0.5 h-3 bg-gray-100 group-hover:bg-white transition-colors opacity-20 group-hover:opacity-100"></div>
         </PanelResizeHandle>
 
         {/* AI Chat Panel */}

@@ -119,15 +119,28 @@ export function AiChat({ className, onSendMessage }: ChatProps) {
           return (
             <div
               key={item.id}
-              className="group inline-flex items-center gap-1 px-1.5 py-0.5 bg-blue-100 text-blue-700 rounded text-xs hover:bg-blue-200 transition-colors"
+              className="group inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-xs transition-colors"
+              style={{ 
+                backgroundColor: '#F3E8FF', 
+                color: '#7C3AED',
+                border: '0.5px solid #E9D5FF'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#E9D5FF';
+                e.currentTarget.style.borderColor = '#DDD6FE';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#F3E8FF';
+                e.currentTarget.style.borderColor = '#E9D5FF';
+              }}
             >
               <IconComponent className="w-2.5 h-2.5" />
               <span>{item.name}</span>
               <button
                 onClick={() => handleRemoveContext(item.id)}
-                className="opacity-0 group-hover:opacity-100 transition-opacity"
+                className="opacity-0 group-hover:opacity-100 transition-opacity hover:text-purple-800"
               >
-                <X className="w-2.5 h-2.5 hover:text-blue-900" />
+                <X className="w-2.5 h-2.5" />
               </button>
             </div>
           );
@@ -269,7 +282,7 @@ export function AiChat({ className, onSendMessage }: ChatProps) {
           </div>
 
           {/* Chat Input at Bottom */}
-          <div className="p-1.5 border-t border-gray-200">
+          <div className="px-3 pt-3 pb-6 border-t border-gray-200">
             <div className="border border-gray-200 rounded bg-white p-2 relative">
               <div className="mb-1.5">
                 {renderContextChips()}
@@ -308,7 +321,7 @@ export function AiChat({ className, onSendMessage }: ChatProps) {
       ) : (
         /* Initial Chat Input */
         <>
-          <div className="p-1.5">
+          <div className="px-3 pt-3 pb-6">
             <div className="border border-gray-200 rounded bg-white p-2 relative">
               <div className="mb-1.5">
                 {renderContextChips()}
